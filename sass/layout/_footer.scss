@@ -26,11 +26,11 @@
    line-height: 1.19;
    margin-bottom: 20px;
    transition: color var(--transition-dur-and-func);
-}
 
-.page-footer-link:hover,
-.page-footer-link:focus {
-   color: var(--accent-color);
+   &:hover,
+   &:focus {
+      color: var(--accent-color);
+   }
 }
 
 .address-list-item-text {
@@ -42,12 +42,12 @@
    font-size: 14px;
    line-height: 1.71;
    transition: color var(--transition-dur-and-func);
-}
 
-.address-list-item-text:hover,
-.address-list-item-text:focus {
-   color: var(--accent-color);
-   transition: color var(--transition-dur-and-func);
+   &:hover,
+   &:focus {
+      color: var(--accent-color);
+      transition: color var(--transition-dur-and-func);
+   }
 }
 
 .address-list-item-link {
@@ -58,12 +58,12 @@
    font-size: 14px;
    line-height: 1.71;
    transition: color var(--transition-dur-and-func);
-}
 
-.address-list-item-link:hover,
-.address-list-item-link:focus {
-   color: var(--accent-color);
-   transition: color var(--transition-dur-and-func);
+   &:hover,
+   &:focus {
+      color: var(--accent-color);
+      transition: color var(--transition-dur-and-func);
+   }
 }
 
 .footer-wrapper {
@@ -88,8 +88,6 @@
    column-gap: 10px;
 }
 
-.footer-list-item {}
-
 .footer-list-link {
    display: flex;
    justify-content: center;
@@ -100,12 +98,12 @@
    background-color: var(--primary-bg-color);
    background: rgba(255, 255, 255, 0.1);
    transition: background-color var(--transition-dur-and-func);
-}
 
-.footer-list-link:hover,
-.footer-list-link:focus {
-   background-color: var(--accent-color);
-   transition: background-color var(--transition-dur-and-func);
+   &:hover,
+   &:focus {
+      background-color: var(--accent-color);
+      transition: background-color var(--transition-dur-and-func);
+   }
 }
 
 .footer-list-icon {
@@ -127,8 +125,6 @@
    color: var(--primary-bg-color);
 }
 
-.footer-form-wrapper {}
-
 .footer-form-input {
    width: 358px;
    padding: 15px 16px;
@@ -138,13 +134,13 @@
    background: var(--hero-footer-bg-color);
    color: var(--primary-bg-color);
    margin-right: 12px;
-}
 
-.footer-form-input::placeholder {
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.25px;
-   color: rgba(255, 255, 255, 0.6);
+   &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25px;
+      color: rgba(255, 255, 255, 0.6);
+   }
 }
 
 .footer-form-btn {
@@ -167,12 +163,12 @@
    align-items: center;
    min-width: 200px;
    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
-}
 
-.footer-form-btn:hover,
-.footer-form-btn:focus {
-   color: var(--primary-bg-color);
-   background-color: var(--button-hover-focus-bg-color);
+   &:hover,
+   &:focus {
+      color: var(--primary-bg-color);
+      background-color: var(--button-hover-focus-bg-color);
+   }
 }
 
 .footer-form-icon {

@@ -24,19 +24,19 @@
    border-radius: 50%;
    padding: 0;
    transition: border-color var(--accent-color);
+
+   &:hover {
+      border-color: var(--accent-color);
+   }  
 }
 
 .modal-close-button-icon {
    fill: var(--header-logo-color);
    transition: fill var(--transition-dur-and-func);
-}
 
-.modal-close-button:hover {
-   border-color: var(--accent-color);
-}
-
-.modal-close-button:hover .modal-close-button-icon {
-   fill: var(--accent-color);
+   .modal-close-button:hover & {
+      fill: var(--accent-color);
+   }
 }
 
 .modal-caption {

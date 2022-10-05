@@ -1,9 +1,9 @@
-.feature-section {
+.feature {
    padding-bottom: 47px;
    padding-top: 94px;
 }
 
-.feature-title {
+.feature__title {
    color: var(--title-text-color);
    font-weight: 700;
    font-size: 14px;
@@ -11,23 +11,23 @@
    margin-bottom: 10px;
 }
 
-.feature-text {
+.feature__text {
    font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
 }
 
-.feature-list {
+.feature__list {
    display: flex;
    flex-wrap: wrap;
    gap: 30px;
 }
 
-.feature-list-item {
+.feature__item {
    flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
-.feature-icon-box {
+.feature__icon-box {
    display: flex;
    justify-content: center;
    align-items: center;

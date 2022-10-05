@@ -25,11 +25,11 @@
    border-radius: 4px;
    padding-left: 42px;
    transition: border-color var(--transition-dur-and-func);
-}
 
-.modal-form-input:focus {
-   outline: none;
-   border-color: var(--accent-color);
+   &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+   }   
 }
 
 .modal-form-icon {
@@ -40,10 +40,10 @@
    display: block;
    background-color: var(--primary-bg-color);
    transition: fill var(--transition-dur-and-func);
-}
 
-.modal-form-input:focus+.modal-form-icon {
-   fill: var(--accent-color);
+   .modal-form-input:focus + & {
+      fill: var(--accent-color);
+   }
 }
 
 .modal-form-message {
@@ -54,15 +54,15 @@
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
    transition: border-color var(--accent-color);
-}
 
-.modal-form-message::placeholder {
-   color: rgba(117, 117, 117, 0.5);
-}
+   &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+   }
 
-.modal-form-message:focus {
-   outline: none;
-   border-color: var(--accent-color);
+   &::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+   }
 }
 
 .modal-form-btn {
@@ -82,12 +82,12 @@
    min-width: 96px;
    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), filter var(--transition-dur-and-func);
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 
-.modal-form-btn:hover,
-.modal-form-btn:focus {
-   color: var(--primary-bg-color);
-   background-color: var(--button-hover-focus-bg-color);
+   &:hover,
+   &:focus {
+      color: var(--primary-bg-color);
+      background-color: var(--button-hover-focus-bg-color);
+   }
 }
 
 .modal-form-link {
@@ -105,17 +105,17 @@
    border-radius: 2px;
    cursor: pointer;
    margin-right: 10px;
-}
 
-.modal-form-check:checked+.modal-form-own-check {
-   background-color: var(--accent-color);
-   border-color: var(--accent-color);
-   border: none;
-}
+   .modal-form-check:checked + & {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      border: none;
+   }
 
-.modal-form-check:focus+.modal-form-own-check {
-   outline: 2px solid var(--accent-color);
-   border: none;
+   .modal-form-check:focus + & {
+      outline: 2px solid var(--accent-color);
+      border: none;
+   }
 }
 
 .modal-form-own-check-icon {
@@ -123,6 +123,6 @@
    fill: var(--primary-bg-color);
 }
 
-.modal-form-check:checked+.modal-form-own-check .modal-form-own-check-icon {
+.modal-form-check:checked + .modal-form-own-check .modal-form-own-check-icon {
    display: block;
 }
