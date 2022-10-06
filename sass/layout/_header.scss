@@ -6,7 +6,7 @@
    padding-bottom: 25px;
 }
 
-.navigation__link_current {
+.current {
    position: relative;
    color: var(--accent-color);
    
@@ -27,47 +27,47 @@
    display: flex;
    align-items: center;
    column-gap: 93px;
+
+   &__logo {
+      color: var(--header-logo-color);
+      font-family: Raleway, sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      transition: color var(--transition-dur-and-func);
+   
+      &:hover,
+      &:focus {
+         color: var(--accent-color);
+      }
+   }
+
+      &__list {
+         display: flex;
+         column-gap: 40px;
+      }
+   
+      &__list-link {
+         color: var(--title-text-color);
+         font-family: Roboto, sans-serif;
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 1.14;
+         transition: color var(--transition-dur-and-func);
+   
+         &:hover,
+         &:focus {
+            color: var(--accent-color);
+         }
+      }
 }
 
-.navigation__logo {
-   color: var(--header-logo-color);
+.logo-span {
+   color: var(--accent-color);
    font-family: Raleway, sans-serif;
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
-   transition: color var(--transition-dur-and-func);
-
-   &:hover,
-   &:focus {
-   color: var(--accent-color);
-   }
-}
-
-.navigation__logo-span {
-   color: var(--accent-color);
-   font-family: Raleway, sans-serif;
-   font-weight: 700;
-   font-size: 26px;
-   line-height: 1.19;
-}
-
-.navigation__list {
-   display: flex;
-   column-gap: 40px;   
-}
-
-.navigation__link {
-   color: var(--title-text-color);
-   font-family: Roboto, sans-serif;
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 1.14;
-   transition: color var(--transition-dur-and-func);
-
-   &:hover,
-   &:focus {
-   color: var(--accent-color);
-   }
 }
 
 .contacts__list {
@@ -82,7 +82,7 @@
    letter-spacing: 0.02em;
 }
 
-.contacts__link {
+.contacts__list-link {
    color: var(--primary-text-color);
    font-family: Roboto, sans-serif;
    font-family: 'Roboto';
@@ -106,8 +106,8 @@
    margin-right: 10px;
    transition: fill var(--transition-dur-and-func);
 
-   .contacts__link:hover &,
-   .contacts__link:focus & {
+   .contacts__list-link:hover &,
+   .contacts__list-link:focus & {
       fill: var(--accent-color);
    }
 }
