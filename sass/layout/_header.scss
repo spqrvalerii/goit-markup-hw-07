@@ -8,6 +8,7 @@
 
 .navigation__link_current {
    position: relative;
+   color: var(--accent-color);
    
    &::after {
    position: absolute;
@@ -20,10 +21,6 @@
    left: 0;
    border-radius: 2px;
 }
-}
-
-.navigation__link.navigation__link_current {
-   color: var(--accent-color);
 }
 
 .navigation {
